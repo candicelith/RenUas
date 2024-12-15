@@ -6,7 +6,7 @@ import retrofit2.http.GET
 
 interface ApiService {
 
-    @GET("pKZDn/product/")
+    @GET("product/")
     fun getAllSupplies(): Call<List<Supplies>>
 
 }

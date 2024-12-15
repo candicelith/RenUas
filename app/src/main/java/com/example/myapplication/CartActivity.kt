@@ -34,6 +34,12 @@ class CartActivity : AppCompatActivity() {
         }
     }
 
+    private fun resetCart() {
+        executorService.execute {
+            mCartDao.clearCart() // This will delete all cart items from the database
+        }
+    }
+
     override fun onResume() {
         super.onResume()
         getAllCart()

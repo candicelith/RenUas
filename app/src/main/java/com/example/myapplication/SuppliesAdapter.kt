@@ -41,7 +41,7 @@ class SuppliesAdapter(
         holder.textColor.text = color
         holder.textPrice.text = price
 
-        val supplyKey = "$supply \n $color"
+        val supplyKey = "$supply\n$color"
 
         val isCart = cartItem.contains(supplyKey)
         holder.cartIcon.setImageResource(

@@ -17,7 +17,7 @@ object ApiClient {
             .build()
 
         val builder = Retrofit.Builder()
-            .baseUrl("https://ppbo-api.vercel.app")
+            .baseUrl("https://ppbo-api.vercel.app/pKZDn/")
             .addConverterFactory(GsonConverterFactory.create())
             .client(mOkHttpClient)
             .build()
